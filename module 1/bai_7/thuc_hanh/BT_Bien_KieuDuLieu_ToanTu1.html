@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        let inputVatly;
+        let inputHoahoc;
+        let inputSinhhoc;
+        inputVatly = prompt("nhập điểm vật lí:");
+        inputHoahoc = prompt("nhập điểm hóa học:");
+        inputSinhhoc = prompt("nhập điểm sinh học");
+        let vatly = parseInt(inputVatly);
+        let hoahoc = parseInt(inputHoahoc);
+        let sinhhoc = parseInt(inputSinhhoc);
+        let sum = vatly + hoahoc + sinhhoc;
+        document.write("sum = " + sum);
+        let AVG = (vatly + hoahoc + sinhhoc) / 3;
+        document.write("AVG = " + AVG);
+    </script>
+</body>
+</html>

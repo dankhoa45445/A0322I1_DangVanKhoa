@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>Amount</th>
+                <th>From Currency</th>
+                <th>To Currency</th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="number" id="number" />
+                </th>
+                <th>
+                    <select name="" id="select1">
+                        <option value="a">VND</option>
+                        <option value="b">USD</option>
+                    </select>
+                </th>
+                <th>
+                    <select name="" id="select2">
+                        <option value="a">VND</option>
+                        <option value="b">USD</option>
+                    </select>
+                </th>
+                <th>
+                    <button onclick="getInformation()">convert</button>
+                </th>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function getInformation() {
+            let number = document.getElementById("number").value;
+            let select1 = document.getElementById("select1").value;
+            let select2 = document.getElementById('select2').value;
+            if (select1 == select2) {
+                alert(number);
+            }
+            if (select1 == "a" && select2 == "b") {
+                alert(number / 24000);
+            }
+            if (select1 == "b" && select2 == "a") {
+                alert(number * 24000);
+            }
+        }
+    </script>
+</body>
+</html>
